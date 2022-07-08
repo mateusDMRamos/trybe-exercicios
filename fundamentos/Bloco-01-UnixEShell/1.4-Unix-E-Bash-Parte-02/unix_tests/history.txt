@@ -1,0 +1,10 @@
+    1  clear
+    2  curl -o- [200~https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh~ | bash
+    3  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+    4  curl --version
+    5  sudo apt instal curl
+    6  Amesma,,2012sudo apt instal curl
+    7  clear
+    8  sudo apt instal curl
+    9  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+   10  sudo apt install curl
