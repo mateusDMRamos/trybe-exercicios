@@ -1,13 +1,39 @@
-h1, p{
-    text-align: center;
+div:hover{
+    border-style:dashed;
+    border-color: blue;
 }
-
-li:hover{
-    background-color: blanchedalmond;
+div:nth-of-type(1){
+    background-color: red ;
 }
-li:active{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+div:nth-of-type(2){
+    background-color: orange ;
 }
-ol, ul{
-    list-style: none;
+div:nth-of-type(3){
+    background-color: cyan ;
+    font-size: 30px;
+}
+div:nth-of-type(4){
+    background-color: crimson ;
+}
+div:nth-of-type(5){
+    background-color: pink ;
+}
+div:nth-of-type(1) h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div:nth-of-type(2) h3{
+    color: white;
+}
+div:nth-of-type(3) h3{
+    font-style: oblique;
+}
+div:nth-of-type(4) h3:active{
+    font-style:italic;
+    color: aqua;
+}
+div:nth-of-type(5) h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div:nth-of-type(2n+1) h3:nth-of-type(1){
+    font-style: italic;
 }
