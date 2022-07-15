@@ -1,0 +1,66 @@
+.lista-ordenada{
+    background-color: yellow;
+}
+
+.lista-ordenada li:nth-of-type(2n){
+    color: green;
+}
+
+.lista-ordenada li:nth-of-type(2n+1){
+    text-transform: uppercase;    
+}
+
+.header{
+    color: red;
+}
+
+.header em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li{
+    font-size: 20px;
+}
+
+li em{
+    font-weight: bold;
+}
+
+.linguagens li:nth-of-type(n-3){
+    color: blue;
+}
+
+.linguagens li.java {
+    background-color: pink;
+}
+
+.aliados li #stack:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: orange;
+}
+
+.aliados li #w3s:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+}
+
+.aliados li #mdn:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.aliados li #devd:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: yellow;
+}
+
+.aliados li #trybe:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+}
