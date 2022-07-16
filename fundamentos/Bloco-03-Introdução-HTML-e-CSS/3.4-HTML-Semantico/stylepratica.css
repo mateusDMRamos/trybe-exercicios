@@ -1,0 +1,21 @@
+#fotostomatopoda{
+    float: left;
+}
+
+#descstomato{
+    display: inline-block;
+    width: 60%;
+}
+#tabclassificação, td{
+    border: 1px solid black;
+}
+#tabclassificação th{
+    text-align: center ;
+}
+#stomafrente{
+    float: left;
+}
+#curiosidadevisao p{
+    display: inline-block;
+    width: 60%;
+}
