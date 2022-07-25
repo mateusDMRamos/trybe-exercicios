@@ -16,6 +16,9 @@
     float: left;
 }
 #curiosidadevisao p{
+    position: relative;
+    top: 0px;
+    left: 10px;
     display: inline-block;
     width: 60%;
 }
