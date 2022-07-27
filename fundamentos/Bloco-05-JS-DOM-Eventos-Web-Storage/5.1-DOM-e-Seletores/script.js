@@ -28,3 +28,11 @@ function backGroundVerde (){
 
 let mainColor = document.getElementsByClassName("main-content");
 mainColor[0].style.backgroundColor = backGroundVerde();
+
+//Exercício 3
+function backGroundBranco (){
+    return "white";
+}
+
+let centerColor = document.getElementsByClassName("center-content");
+centerColor[0].style.backgroundColor = backGroundBranco();
