@@ -1,21 +1,20 @@
-let header = document.getElementById("header-container");
-header.style.backgroundColor = "green";
 
-let emergencia = document.getElementsByClassName("emergency-tasks")[0];
-emergencia.style.backgroundColor = "pink";
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+ 1 .Crie e execute uma função que mude o texto na tag `<p>-----</p>`, para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+ 2. Crie e execute uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+ 3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.
+ 4. Crie e execute uma função que corrija o texto da tag <h1>.
+ 5. Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
+ 6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
 
-let tituloEmergencia = document.querySelectorAll(".emergency-tasks h3");
-for (i = 0; i < tituloEmergencia.length; i += 1){
-    tituloEmergencia[i].style.backgroundColor = "purple";
+function texto (){
+    return "Estarei trabalhando como dev, exercendo todo o meu aprendizado adquirido na Trybe, não só de hard, mas também de  softskills.";
 }
 
-let naoEmergencia = document.getElementsByClassName("no-emergency-tasks")[0];
-naoEmergencia.style.backgroundColor = "yellow";
-
-let tituloNaoEmergencia = document.querySelectorAll(".no-emergency-tasks h3");
-for (i = 0; i < tituloNaoEmergencia.length; i += 1){
-    tituloNaoEmergencia[i].style.backgroundColor = "black";
-}
-
-let footer = document.getElementById("footer-container");
-footer.style.backgroundColor = "green";
+let tagsP = document.getElementsByTagName("p");
+tagsP[1].innerText = texto();
