@@ -1,5 +1,5 @@
-let names = ['João', 'Maria', 'Antônio', 'Margarida'];
-
-for(let name of names){
-    console.log(name);
-}
+let food = ['hamburguer', 'bife', 'acarajé'];
+for (let value of food) {
+  console.log(value);
+};
+//resultado: hamburguer, bife, acarajé;
