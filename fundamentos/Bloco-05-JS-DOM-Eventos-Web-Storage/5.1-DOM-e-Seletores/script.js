@@ -43,3 +43,13 @@ function correcaoH1 (){
 }
 
 let tituloH1 = document.getElementsByTagName("h1")[0].innerText = correcaoH1();
+
+//Exercício 5
+function minusculo (){
+    return "lowercase";
+}
+
+let minusculas = document.getElementsByTagName("p");
+for (i=0; i < minusculas.length; i += 1){
+    minusculas[i].style.textTransform = minusculo();
+}
