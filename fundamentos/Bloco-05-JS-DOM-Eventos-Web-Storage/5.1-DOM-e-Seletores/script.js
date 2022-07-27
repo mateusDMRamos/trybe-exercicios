@@ -12,9 +12,19 @@
  6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
+
+ //Exercício 1
 function texto (){
     return "Estarei trabalhando como dev, exercendo todo o meu aprendizado adquirido na Trybe, não só de hard, mas também de  softskills.";
 }
 
 let tagsP = document.getElementsByTagName("p");
 tagsP[1].innerText = texto();
+
+//Exercício 2
+function backGroundVerde (){
+    return "rgb(76,164,109)";
+}
+
+let mainColor = document.getElementsByClassName("main-content");
+mainColor[0].style.backgroundColor = backGroundVerde();
