@@ -1,13 +1,21 @@
-const paragraph = document.getElementById("paragraph");
-paragraph.style.color = "red";
+let header = document.getElementById("header-container");
+header.style.backgroundColor = "green";
 
-document.getElementById("page-title").innerText = "Star Wars";
+let emergencia = document.getElementsByClassName("emergency-tasks")[0];
+emergencia.style.backgroundColor = "pink";
 
-let paragrafo2 = document.getElementById("second-paragraph");
-paragrafo2.innerText = "Amanheceu, peguei a viola, Botei na sacola, e fui viajar";
-paragrafo2.style.color = "purple";
-paragrafo2.style.background = "yellow";
+let tituloEmergencia = document.querySelectorAll(".emergency-tasks h3");
+for (i = 0; i < tituloEmergencia.length; i += 1){
+    tituloEmergencia[i].style.backgroundColor = "purple";
+}
 
-let subtitulo = document.getElementById("subtitle");
-subtitulo.innerText = "Musica q Gruda:";
-subtitulo.style.fontSize = "30px";
+let naoEmergencia = document.getElementsByClassName("no-emergency-tasks")[0];
+naoEmergencia.style.backgroundColor = "yellow";
+
+let tituloNaoEmergencia = document.querySelectorAll(".no-emergency-tasks h3");
+for (i = 0; i < tituloNaoEmergencia.length; i += 1){
+    tituloNaoEmergencia[i].style.backgroundColor = "black";
+}
+
+let footer = document.getElementById("footer-container");
+footer.style.backgroundColor = "green";
