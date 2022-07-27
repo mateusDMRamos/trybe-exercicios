@@ -53,3 +53,12 @@ let minusculas = document.getElementsByTagName("p");
 for (i=0; i < minusculas.length; i += 1){
     minusculas[i].style.textTransform = minusculo();
 }
+
+//Exercício 6
+function imprimeP(elemento){
+    for (let i = 0; i < elemento.length; i +=1){
+        console.log(elemento[i].innerText);
+    }
+}
+
+imprimeP(tagsP);
