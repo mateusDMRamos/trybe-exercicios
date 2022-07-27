@@ -36,3 +36,10 @@ function backGroundBranco (){
 
 let centerColor = document.getElementsByClassName("center-content");
 centerColor[0].style.backgroundColor = backGroundBranco();
+
+//Exercício 4
+function correcaoH1 (){
+    return "Exercício 5.1 - JavaScript";
+}
+
+let tituloH1 = document.getElementsByTagName("h1")[0].innerText = correcaoH1();
