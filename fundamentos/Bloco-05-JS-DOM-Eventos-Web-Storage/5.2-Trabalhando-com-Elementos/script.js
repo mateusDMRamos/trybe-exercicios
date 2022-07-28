@@ -36,7 +36,18 @@ document.getElementsByClassName('left-content')[0].appendChild(imagem);
 
 
 
-// 🚀 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+//8 🚀 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+let lista = document.createElement('ul');
+document.getElementsByClassName('right-content')[0].appendChild(lista);
+let numerosEscritos = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+for (let index = 0; index < 10; index += 1){
+    let li = document.createElement('li');
+    li.innerText = numerosEscritos[index];
+    document.getElementsByTagName('ul')[0].appendChild(li);
+}
+
+
 // 🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
 // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
 // 🚀 Adicione a classe title na tag h1 criada;
