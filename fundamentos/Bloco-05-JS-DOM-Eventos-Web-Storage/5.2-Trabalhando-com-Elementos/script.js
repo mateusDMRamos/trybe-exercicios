@@ -20,7 +20,15 @@ p.innerText = 'o DOM é utilizado para comunicar JS com o arquivo HTML, possibil
 document.getElementsByClassName('center-content')[0].appendChild(p);
 
 // 🚀 Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+let esquerda = document.createElement('section');
+esquerda.className = 'left-content';
+document.getElementsByClassName('main-content')[0].appendChild(esquerda);
+
 // 🚀 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+let direita = document.createElement('section');
+direita.className = 'right-content';
+document.getElementsByClassName('main-content')[0].appendChild(direita);
+
 // 🚀 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
 // 🚀 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
 // 🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
