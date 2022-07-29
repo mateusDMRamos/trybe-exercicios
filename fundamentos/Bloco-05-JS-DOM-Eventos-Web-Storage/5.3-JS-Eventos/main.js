@@ -83,3 +83,22 @@ function mudaTexto () {
         }
     }
 }
+
+//🚀 Exercício 6:
+let dia = listaDias.children;
+
+for (let index = 0; index < dia.length; index += 1) {
+    dia[index].addEventListener('mouseover', zoom);
+}
+function zoom (evento) {
+    let dia = evento.target;
+    dia.style.fontSize = '30px';
+}
+
+for (let index = 0; index < dia.length; index += 1) {
+    dia[index].addEventListener('mouseleave', retira);
+}
+function retira (evento) {
+    let dia = evento.target;
+    dia.style.fontSize = '';
+}
