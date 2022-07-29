@@ -30,6 +30,14 @@ function mudaClass (opcao) {
             }
         }
         target.className = 'tech';
+        if (opcao.target.id == firstLi.id){
+            input.placeholder = 'Alterar a primeira tecnologia';
+        } else if (opcao.target.id == secondLi.id){
+            input.placeholder = 'Alterar a segunda tecnologia';
+        } else if (opcao.target.id == thirdLi.id){
+            input.placeholder = 'Alterar a terceira tecnologia';
+        }
+
     }
 }
 
@@ -49,9 +57,16 @@ function meuSite () {
     window.open('https://mateusdmramos.github.io/','_blank');
 }
 
-
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+myWebpage.addEventListener('mouseover',mudaCor);
+
+function mudaCor () {
+
+    let color = 'rgb(' + Math.random ()*255 + ', ' + Math.random ()*255 + ', ' + Math.random ()*255 + ')';
+    myWebpage.style.backgroundColor = color;
+}
+
 
 // Segue abaixo um exemplo do uso de event.target:
 
