@@ -65,4 +65,21 @@ function criaBotao2 (nome) {
     botao.innerText = nome;
     return botao;
 }
-document.getElementsByClassName('buttons-container')[0].appendChild(criaBotao('Sexta-feira'));
+document.getElementsByClassName('buttons-container')[0].appendChild(criaBotao2('Sexta-feira'));
+
+
+//🚀 Exercício 5:
+let textoDia = document.getElementById('btn-friday');
+textoDia.addEventListener('click', mudaTexto);
+
+
+function mudaTexto () {
+    let sextasFeiras = document.getElementsByClassName('day');
+    for (let index = 0; index < sextasFeiras.length; index += 1){
+        if ((sextasFeiras[index].className == 'day friday' || sextasFeiras[index].className == 'day holiday friday') && sextasFeiras[index].innerText != "SEXTOU WUHUL") {
+            sextasFeiras[index].innerText = "SEXTOU WUHUL";
+        } else if ((sextasFeiras[index].className == 'day friday' || sextasFeiras[index].className == 'day holiday friday')) {
+            sextasFeiras[index].innerText = index - 1;
+        }
+    }
+}
