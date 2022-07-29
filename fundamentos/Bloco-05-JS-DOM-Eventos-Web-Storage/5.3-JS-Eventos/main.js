@@ -42,7 +42,7 @@ function criaBotao (nome) {
 }
 document.getElementsByClassName('buttons-container')[0].appendChild(criaBotao('Feriados'));
 
-//🚀 Exercício 2:
+//🚀 Exercício 3:
 
 let corBotao = document.getElementById('btn-holiday');
 corBotao.addEventListener('click', mudaCor);
@@ -58,3 +58,11 @@ function mudaCor () {
     }
 }
 
+//🚀 Exercício 4:
+function criaBotao2 (nome) {
+    let botao = document.createElement ('button');
+    botao.id = 'btn-friday';
+    botao.innerText = nome;
+    return botao;
+}
+document.getElementsByClassName('buttons-container')[0].appendChild(criaBotao('Sexta-feira'));
