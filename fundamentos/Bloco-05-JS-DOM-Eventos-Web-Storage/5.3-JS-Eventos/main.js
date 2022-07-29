@@ -76,10 +76,10 @@ textoDia.addEventListener('click', mudaTexto);
 function mudaTexto () {
     let sextasFeiras = document.getElementsByClassName('day');
     for (let index = 0; index < sextasFeiras.length; index += 1){
-        if ((sextasFeiras[index].className == 'day friday' || sextasFeiras[index].className == 'day holiday friday') && sextasFeiras[index].innerText != "SEXTOU WUHUL") {
+        if (sextasFeiras[index].className.includes('friday') && sextasFeiras[index].innerText != "SEXTOU WUHUL") {
             sextasFeiras[index].innerText = "SEXTOU WUHUL";
-        } else if ((sextasFeiras[index].className == 'day friday' || sextasFeiras[index].className == 'day holiday friday')) {
-            sextasFeiras[index].innerText = index - 1;
+        } else if (sextasFeiras[index].className.includes('friday')) {
+            sextasFeiras[index].innerText = index-1;
         }
     }
 }
