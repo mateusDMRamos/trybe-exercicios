@@ -36,8 +36,25 @@ for (let index in decemberDaysList) {
 //🚀 Exercício 2:
 function criaBotao (nome) {
     let botao = document.createElement ('button');
-    botao.id = 'btn-holliday';
+    botao.id = 'btn-holiday';
     botao.innerText = nome;
     return botao;
 }
 document.getElementsByClassName('buttons-container')[0].appendChild(criaBotao('Feriados'));
+
+//🚀 Exercício 2:
+
+let corBotao = document.getElementById('btn-holiday');
+corBotao.addEventListener('click', mudaCor);
+
+function mudaCor () {
+    let diasFeriado = document.getElementsByClassName('holiday');
+    for (let index = 0; index < diasFeriado.length; index += 1){
+        if (diasFeriado[index].style.backgroundColor != 'white') {
+            diasFeriado[index].style.backgroundColor = 'white';
+        } else {
+            diasFeriado[index].style.backgroundColor = 'rgb(238,238,238)';
+        }
+    }
+}
+
