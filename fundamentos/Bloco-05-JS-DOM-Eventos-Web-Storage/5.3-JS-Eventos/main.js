@@ -32,3 +32,12 @@ for (let index in decemberDaysList) {
     }
     listaDias.appendChild(dia);
 }
+
+//🚀 Exercício 2:
+function criaBotao (nome) {
+    let botao = document.createElement ('button');
+    botao.id = 'btn-holliday';
+    botao.innerText = nome;
+    return botao;
+}
+document.getElementsByClassName('buttons-container')[0].appendChild(criaBotao('Feriados'));
