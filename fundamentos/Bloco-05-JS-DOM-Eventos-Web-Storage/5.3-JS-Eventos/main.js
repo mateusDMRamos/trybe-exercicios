@@ -104,8 +104,10 @@ function retira (evento) {
 }
 
 //🚀 Exercício 7:
-document.getElementById('btn-add').addEventListener('click', () => {
+ let tarefas = task => {
     let tarefa = document.createElement('span');
-    tarefa.innerText = document.getElementById('task-input').value;
+    tarefa.innerText = task;
     document.getElementsByClassName('my-tasks')[0].appendChild(tarefa);
-});
+};
+tarefas('cozinhar');
+//🚀 Exercício 8:
