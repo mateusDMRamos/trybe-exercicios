@@ -102,3 +102,10 @@ function retira (evento) {
     let dia = evento.target;
     dia.style.fontSize = '';
 }
+
+//🚀 Exercício 7:
+document.getElementById('btn-add').addEventListener('click', () => {
+    let tarefa = document.createElement('span');
+    tarefa.innerText = document.getElementById('task-input').value;
+    document.getElementsByClassName('my-tasks')[0].appendChild(tarefa);
+});
