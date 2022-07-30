@@ -129,6 +129,18 @@ document.getElementsByClassName('my-tasks')[0].addEventListener('click', lugarCl
     }
 });
 
+//🚀 Exercício 10:
+document.getElementsByClassName('days-container')[0].addEventListener('click', diaClicado => {
+    if (document.getElementsByClassName('task selected').length == 0 ) {
+        return;
+    }
+    let cor = document.getElementsByClassName('task selected')[0];
+    if (diaClicado.target.className.includes('day') && diaClicado.target.style.color != cor.style.backgroundColor) {
+        diaClicado.target.style.color = cor.style.backgroundColor;
+    } else if (diaClicado.target.className.includes('day')) {
+        diaClicado.target.style.color = 'rgb(119,119,119)';
+    }
+});
 
 
 // document.getElementById('btn-add').addEventListener('click', () => {
