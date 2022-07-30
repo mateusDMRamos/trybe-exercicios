@@ -120,6 +120,15 @@ let legendar = cor => {
 }
 legendar('blue');
 
+//🚀 Exercício 9:
+document.getElementsByClassName('my-tasks')[0].addEventListener('click', lugarClicado => {
+    if (lugarClicado.target.className == 'task') {
+        lugarClicado.target.className = 'task selected';
+    } else if (lugarClicado.target.className == 'task selected') {
+        lugarClicado.target.className = 'task';
+    }
+});
+
 
 
 // document.getElementById('btn-add').addEventListener('click', () => {
