@@ -142,9 +142,18 @@ document.getElementsByClassName('days-container')[0].addEventListener('click', d
     }
 });
 
+//🚀 Exercício Bonus:
 
-// document.getElementById('btn-add').addEventListener('click', () => {
-//     let tarefa = document.createElement('span');
-//     tarefa.innerText = document.getElementById('task-input').value;
-//     document.getElementsByClassName('my-tasks')[0].appendChild(tarefa);
-// });
+document.getElementById('btn-add').addEventListener('click',adicionarCompromisso);
+document.getElementById('task-input').addEventListener('keydown', adicionarCompromisso);
+function adicionarCompromisso (evento) {
+    if (evento.key === "Enter" || evento.type === 'click') {
+        if (String(document.getElementById('task-input').value) == '') {
+            alert("Nenhuma tarefa informada");
+            return;
+        }
+        let tarefa = document.createElement('li');
+        tarefa.innerText = document.getElementById('task-input').value;
+        document.getElementsByClassName('task-list')[0].appendChild(tarefa);
+      }
+};
