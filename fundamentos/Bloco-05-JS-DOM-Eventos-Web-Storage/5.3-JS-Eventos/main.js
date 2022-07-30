@@ -110,4 +110,20 @@ function retira (evento) {
     document.getElementsByClassName('my-tasks')[0].appendChild(tarefa);
 };
 tarefas('cozinhar');
+
 //🚀 Exercício 8:
+let legendar = cor => {
+    let legenda = document.createElement('div');
+    legenda.className = 'task';
+    legenda.style.backgroundColor = cor;
+    document.getElementsByClassName('my-tasks')[0].appendChild(legenda);
+}
+legendar('blue');
+
+
+
+// document.getElementById('btn-add').addEventListener('click', () => {
+//     let tarefa = document.createElement('span');
+//     tarefa.innerText = document.getElementById('task-input').value;
+//     document.getElementsByClassName('my-tasks')[0].appendChild(tarefa);
+// });
