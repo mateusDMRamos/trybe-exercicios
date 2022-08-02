@@ -59,7 +59,7 @@ fontFamily.addEventListener('change', () => {
 });
 
 window.onload = () => {
-    for (let index = 0; index <= caracteristicas.length; index += 1) {
+    for (let index = 0; index < caracteristicas.length; index += 1) {
         if (typeof(Storage) !== undefined) {
             if (localStorage.getItem(caracteristicas[index]) == undefined) {
                 let caracteristica = caracteristicas[index]
@@ -67,7 +67,12 @@ window.onload = () => {
                 localStorage.setItem(caracteristica, valorInicial);
             } else {
                 let caracteristica = caracteristicas[index]
-                document.body.style.caracteristica = localStorage.getItem(caracteristica);
+                document.body.style.backgroundColor = localStorage.getItem('backgroundColor');
+                document.body.style.color = localStorage.getItem('color');
+                document.body.style.lineHeight = localStorage.getItem('lineHeight');
+                document.body.style.fontSize = localStorage.getItem('fontSize');
+                document.body.style.fontFamily = localStorage.getItem('fontFamily');
+
             }
         }
     }
