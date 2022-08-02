@@ -66,12 +66,12 @@ window.onload = () => {
                 let valorInicial = JSON.stringify(document.body.style.caracteristica);
                 localStorage.setItem(caracteristica, valorInicial);
             } else {
-                let caracteristica = caracteristicas[index]
                 document.body.style.backgroundColor = localStorage.getItem('backgroundColor');
                 document.body.style.color = localStorage.getItem('color');
                 document.body.style.lineHeight = localStorage.getItem('lineHeight');
                 document.body.style.fontSize = localStorage.getItem('fontSize');
                 document.body.style.fontFamily = localStorage.getItem('fontFamily');
+                index = 10;
 
             }
         }
